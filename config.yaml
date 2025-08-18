@@ -1,0 +1,22 @@
+app:
+  name: "EpicGames API"
+  debug: true
+
+database:
+  url: "postgresql+asyncpg://postgres:yourpassword@localhost:5432/epic_games"
+  echo: false
+  pool_size: 10
+  max_overflow: 20
+
+scraper:
+  base_url: "https://store.epicgames.com"
+  browse_path: "/en-US/browse?sortBy=releaseDate&sortDir=DESC&count=30"
+  concurrency: 5
+  request_timeout: 20
+  delay_between_requests_ms: 350
+  user_agents:
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0 Safari/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
+  smart_dns:
+    - "78.157.42.100"
+    - "78.157.42.101"
