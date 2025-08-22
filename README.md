@@ -3,6 +3,7 @@ python
 
 NOTICE : THIS PROJECT DOES NOT WORK IN SANCTIONED COUNTRIES.(IRAN , CHINA , RUSSIA , NORTH KOREA , ...)
 
+database name : epic_games
 install packages:
 fastapi>=0.110,<1.0
 uvicorn[standard]>=0.30,<0.31
